@@ -18,6 +18,8 @@ namespace Banco
             this.Nome = nomes;
         }
 
+
+
         /* Comentário Ednaldo => Se aqui você quer setar apenas o nome do cliente, a variável nomes deveria ser nome, no singular. Se a intenção é colocar um nome completo, isso cabe dentro de uma String mesmo, como por exemplo, "Ednaldo Nicolau dos Santos"
         Tudo pode ser posto dentro de aspas pra ser como string, incluindo espaços.*/
 
