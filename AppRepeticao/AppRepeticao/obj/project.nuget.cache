@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YspPqkRPp0pfplredSac2TaxnlwO2FqIiQn6VUv4OImMoxnUytc6DP4yVBokWsd+VtkdpnxGTsZl2ML6RFopHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jhown\\source\\repos\\AppRepeticao\\AppRepeticao\\AppRepeticao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jhown\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

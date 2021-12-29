@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oYD7T5ujr4SYRmAFM1H4yZ+Rbjnz1D0bPkG2/3RvjJiAzjb5yRWywfiGSx1uB2+Er9FNuGmiUHyUQeZ2Cqljmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jhown\\source\\repos\\AplicativoOOP\\AplicativoOOP\\AplicativoOOP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jhown\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

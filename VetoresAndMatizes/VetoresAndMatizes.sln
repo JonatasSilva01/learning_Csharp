@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetoresAndMatizes", "VetoresAndMatizes\VetoresAndMatizes.csproj", "{5C1291CB-2A6D-4D1D-88ED-81070DED79DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1291CB-2A6D-4D1D-88ED-81070DED79DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1291CB-2A6D-4D1D-88ED-81070DED79DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1291CB-2A6D-4D1D-88ED-81070DED79DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1291CB-2A6D-4D1D-88ED-81070DED79DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF3CB580-9073-4DB6-9720-A12EA5429BE0}
+	EndGlobalSection
+EndGlobal

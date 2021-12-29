@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "W3z03vPtlvyk7m6k2WrvrWy7kvF9T4uvTPuPvbDF9wzld+V2MoRZ4TL+fxJN73YhUc9u9fuWh2RzXs+ffvVacw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jhown\\source\\repos\\AplicativoNotaFiscal\\AplicativoNotaFiscal\\AplicativoNotaFiscal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jhown\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

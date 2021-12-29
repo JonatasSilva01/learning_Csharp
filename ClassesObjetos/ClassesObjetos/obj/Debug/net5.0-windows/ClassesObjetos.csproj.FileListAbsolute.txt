@@ -1,0 +1,20 @@
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.exe
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.deps.json
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.runtimeconfig.json
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.runtimeconfig.dev.json
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.dll
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ref\ClassesObjetos.dll
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\bin\Debug\net5.0-windows\ClassesObjetos.pdb
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.csproj.AssemblyReference.cache
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.Form1.resources
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.csproj.GenerateResource.cache
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.AssemblyInfoInputs.cache
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.AssemblyInfo.cs
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.dll
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ref\ClassesObjetos.dll
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.pdb
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.genruntimeconfig.cache
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.Form1 - Cópia.resources
+C:\Users\Jhown\source\repos\ClassesObjetos\ClassesObjetos\obj\Debug\net5.0-windows\ClassesObjetos.Form2.resources

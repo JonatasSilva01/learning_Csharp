@@ -1,0 +1,43 @@
+﻿@page
+@model Aluno.Pages.Estudantes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Informação do aluno</h1>
+
+<div>
+    <h4>Aluno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alunos.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alunos.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alunos.Nacimento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alunos.Nacimento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alunos.Genero)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alunos.Genero)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alunos.Notas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alunos.Notas)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Alunos.ID">Editar</a> |
+    <a asp-page="./Index">Voltar para a lista</a>
+</div>

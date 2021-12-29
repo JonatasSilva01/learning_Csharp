@@ -1,0 +1,7 @@
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\bin\Debug\DevCsharp.exe.config
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\bin\Debug\DevCsharp.exe
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\bin\Debug\DevCsharp.pdb
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\obj\Debug\DevCsharp.csproj.AssemblyReference.cache
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\obj\Debug\DevCsharp.csproj.CoreCompileInputs.cache
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\obj\Debug\DevCsharp.exe
+C:\Users\Jhown\source\repos\DevCsharp\DevCsharp\obj\Debug\DevCsharp.pdb

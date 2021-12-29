@@ -1,0 +1,7 @@
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\bin\Debug\VetoresAndMatizes.exe.config
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\bin\Debug\VetoresAndMatizes.exe
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\bin\Debug\VetoresAndMatizes.pdb
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\obj\Debug\VetoresAndMatizes.csproj.AssemblyReference.cache
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\obj\Debug\VetoresAndMatizes.csproj.CoreCompileInputs.cache
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\obj\Debug\VetoresAndMatizes.exe
+C:\Users\Jhown\source\repos\VetoresAndMatizes\VetoresAndMatizes\obj\Debug\VetoresAndMatizes.pdb

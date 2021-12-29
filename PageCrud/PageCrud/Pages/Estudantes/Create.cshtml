@@ -1,0 +1,49 @@
+﻿@page
+@model PageCrud.Pages.Estudantes.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Alunos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Alunos.Nome" class="control-label"></label>
+                <input asp-for="Alunos.Nome" class="form-control" />
+                <span asp-validation-for="Alunos.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alunos.RealiseDate" class="control-label"></label>
+                <input asp-for="Alunos.RealiseDate" class="form-control" />
+                <span asp-validation-for="Alunos.RealiseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alunos.Genero" class="control-label"></label>
+                <input asp-for="Alunos.Genero" class="form-control" />
+                <span asp-validation-for="Alunos.Genero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alunos.Nota" class="control-label"></label>
+                <input asp-for="Alunos.Nota" class="form-control" />
+                <span asp-validation-for="Alunos.Nota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
