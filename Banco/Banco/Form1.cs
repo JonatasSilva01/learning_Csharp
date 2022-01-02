@@ -40,16 +40,13 @@ namespace Banco
             double valor = Convert.ToDouble(valorDigitado);
             if(valor >= 0)
             {
-                //this.conta.Saca(valor);
-                if(this.conta.Saldo > 0)
+                if(this.conta.VerificaSeOClienteEstaComSaldoPositivoNoMomento())
                 {
                     this.conta.Saca(valor);
-                    MessageBox.Show("Saque Realizado!!");
                 }
                 else
                 {
-                    this.conta.Saca(0);
-                    MessageBox.Show("Você precisa Realizar um Deposito na Sua conta.");
+                    MessageBox.Show($"Sua conta não tem dinheiro suficiente");
                 }
             }
             else

@@ -58,10 +58,18 @@ namespace Banco
 
         public void RetiraSaldo(double valor)
         {
-            if(Saldo >= 0 )
+            if(VerificaSeOClienteEstaComSaldoPositivoNoMomento())
             {
-                Saldo -= valor;
-            }else
+                if (valor <= Saldo)
+                {
+                    Saldo -= valor;
+                }
+                else 
+                {
+                    System.Windows.Forms.MessageBox.Show("voce não tem saldo o suficiente!");
+                }                
+            }
+            else
             {
                 Saldo = 0;
             }
@@ -90,6 +98,11 @@ namespace Banco
             {
                 this.Saldo = Saldo;
             }
+        }
+
+        public void PodeSacarODinheiro()
+        {
+
         }
     }
 }
