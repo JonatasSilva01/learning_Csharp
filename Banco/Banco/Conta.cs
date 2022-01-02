@@ -99,10 +99,5 @@ namespace Banco
                 this.Saldo = Saldo;
             }
         }
-
-        public void PodeSacarODinheiro()
-        {
-
-        }
     }
 }
