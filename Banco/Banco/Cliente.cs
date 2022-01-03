@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Banco
 {
@@ -6,8 +7,21 @@ namespace Banco
     {
         //Atributos da minha classe
         public string Nome { get; set; }
+        public int idade { get; set; }
+        public string CPF { get; set; }
+        public string documentos { get; set; }
 
-
+        public bool PodeAbrirContaSozinho
+        {
+            get
+            {
+                var maiorDeIdade = this.idade >= 18;
+                var emancipado = this.documentos.Contains("emacipados");
+                var possuiCPF = !string.IsNullOrEmpty(this.CPF);
+                return (maiorDeIdade || emancipado) && possuiCPF;
+            }
+        }
+        
         // Construtor
         /* 
           Caso os Clientes não escreverem seus Nomes,

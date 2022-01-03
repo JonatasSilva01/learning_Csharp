@@ -23,8 +23,8 @@ namespace Banco
             this.conta = new Conta();
 
             Conta contaBanco = new Conta();
-            contaBanco.Numero = 1;
             Cliente cliente = new Cliente("Jonatas");
+            contaBanco.Numero = 1;
             contaBanco.Titular = cliente;
 
             TextoTitular.Text = contaBanco.Titular.Nome;
