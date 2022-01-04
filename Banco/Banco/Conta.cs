@@ -13,6 +13,7 @@ namespace Banco
         public Cliente Titular { get; set; }
         public int Numero { get; set; }
         public double Saldo { get; private set; }
+        public int Tipo { get; set; }
 
 
         // acessando o saldo por metodos publicos.
@@ -60,6 +61,7 @@ namespace Banco
         {
             if(VerificaSeOClienteEstaComSaldoPositivoNoMomento())
             {
+                
                 if (valor <= Saldo)
                 {
                     Saldo -= valor;
@@ -67,7 +69,31 @@ namespace Banco
                 else 
                 {
                     System.Windows.Forms.MessageBox.Show("voce não tem saldo o suficiente!");
-                }                
+                }
+                /*
+                if(Tipo == 1)
+                {
+                    if (valor <= Saldo)
+                    {
+                        Saldo -= valor + 0.10;
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("voce não tem saldo o suficiente!");
+                    }
+                }
+                else
+                {
+                    if (valor <= Saldo)
+                    {
+                        Saldo -= valor;
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("voce não tem saldo o suficiente!");
+                    }
+                }
+                */
             }
             else
             {
