@@ -40,6 +40,7 @@ namespace Banco
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Conta = new System.Windows.Forms.GroupBox();
+            this.Teste01 = new System.Windows.Forms.Button();
             this.Conta.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,11 +155,22 @@ namespace Banco
             this.Conta.TabStop = false;
             this.Conta.Text = "Conta";
             // 
+            // Teste01
+            // 
+            this.Teste01.Location = new System.Drawing.Point(99, 388);
+            this.Teste01.Name = "Teste01";
+            this.Teste01.Size = new System.Drawing.Size(140, 39);
+            this.Teste01.TabIndex = 12;
+            this.Teste01.Text = "Teste";
+            this.Teste01.UseVisualStyleBackColor = true;
+            this.Teste01.Click += new System.EventHandler(this.Teste01_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 450);
+            this.Controls.Add(this.Teste01);
             this.Controls.Add(this.Conta);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -182,6 +194,7 @@ namespace Banco
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox Conta;
+        private System.Windows.Forms.Button Teste01;
     }
 }
 

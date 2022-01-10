@@ -12,12 +12,13 @@ namespace Banco
         // Atributos da minha classe.
         public Cliente Titular { get; set; }
         public int Numero { get; set; }
-        public double Saldo { get; private set; }
+        public double Saldo { get; protected set; }
+        /*Protected só pode ser acessado pela própria classe e por aqueele q herda ela*/
         public int Tipo { get; set; }
 
 
         // acessando o saldo por metodos publicos.
-        public void SetSaldoPessoa(double valor)// Estou colocando um valor inicial simulando uma conta normal
+        public void SetSaldoPessoa(double valor)
         {
             this.Saldo = valor;
         }
@@ -70,8 +71,9 @@ namespace Banco
                 {
                     System.Windows.Forms.MessageBox.Show("voce não tem saldo o suficiente!");
                 }
+                
                 /*
-                if(Tipo == 1)
+                if(Tipo == ???)
                 {
                     if (valor <= Saldo)
                     {
@@ -101,7 +103,7 @@ namespace Banco
             }
         }
 
-        public void Saca(double valor)
+        public virtual void Saca(double valor)
         {
             
             if(valor > 0)

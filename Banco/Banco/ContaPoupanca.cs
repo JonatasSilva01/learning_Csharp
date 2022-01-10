@@ -8,35 +8,19 @@ namespace Banco
 {
     public class ContaPoupanca : Conta
     {
-        public int Numero { get; set; }
-        public double Saldo { get; private set; }
-        public Cliente Titular { get; set; }
+        /*
+            Quando uma classe é definida com o :, dizemos que ela herda da outra (Conta)
+            e por isso ela ganha todos os atributos e métodos da outra classe. Por exemplo, se ContaPoupanca herdar
+            de Conta, isso quer dizer que ela terá Numero, Saldo, Titular, Saca() e Deposita() automaticamente, sem
+            subclasse ou classe filha da classe Conta e que Conta é uma classe base ou classe pai da ContaPoupanca precisar
+            fazer nada. Dizemos que a classe ContaPoupanca é uma
+        */
 
-        // Metodos
-        public void Saca(double valor)
+        public override void Saca(double valor)
         {
-
-            if (valor > 0)
-            {
-                this.RetiraSaldo(valor + 0.10);
-            }
-            else
-            {
-                this.Saldo = Saldo;
-            }
+            this.RetiraSaldo(valor + 0.10);
         }
 
-        public void Deposita(double valor)
-        {
-            if (valor >= 0)
-            {
-                this.Saldo += valor;
-            }
-            else
-            {
-                this.Saldo = Saldo;
-            }
-        }
-
+        
     }
 }

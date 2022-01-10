@@ -74,5 +74,13 @@ namespace Banco
             TextoSaldo.Text = Convert.ToString(this.conta.Saldo);
             
         }
+
+        private void Teste01_Click(object sender, EventArgs e)
+        {
+            ContaPoupanca c = new ContaPoupanca();
+            c.Deposita(100);
+            c.Saca(50);
+            MessageBox.Show($"{c.Saldo}");
+        }
     }
 }
