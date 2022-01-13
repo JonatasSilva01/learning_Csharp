@@ -21,9 +21,10 @@ namespace Banco
         private void Form1_Load(object sender, EventArgs e)
         {
             this.conta = new Conta();
+            this.conta = new ContaPoupanca(0);
 
             Conta contaBanco = new Conta();
-            Cliente cliente = new Cliente("Jonatas");
+            Cliente cliente = new Cliente();
             contaBanco.Numero = 1;
             contaBanco.Titular = cliente;
 
@@ -75,12 +76,32 @@ namespace Banco
             
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        /*
         private void Teste01_Click(object sender, EventArgs e)
         {
-            ContaPoupanca c = new ContaPoupanca();
-            c.Deposita(100);
-            c.Saca(50);
-            MessageBox.Show($"{c.Saldo}");
+
+          //  ContaPoupanca c = new ContaPoupanca();
+          //  c.Deposita(100);
+          //  c.Saca(50);
+          //  MessageBox.Show($"{c.Saldo}");
+
+
+           Conta c1 = new Conta();
+           ContaPoupanca c2 = new ContaPoupanca(0);
+
+           TotalizadorDeContas t = new TotalizadorDeContas();
+
+           t.Soma(c1);
+           t.Soma(c2);
+
+           MessageBox.Show($"SALDO: {c1}\n Saldo: {c2}");
+
+
         }
+        */
     }
 }

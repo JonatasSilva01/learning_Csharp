@@ -4,16 +4,27 @@ namespace Banco
 {
     public class Conta
     {
-        public Conta(int Num = 1, double saldo = 1000)
+
+        /*
+        public Conta(int Num, double saldo)
         {
             this.Numero = Num;
             this.Saldo = saldo;
         }
+        */
         // Atributos da minha classe.
         public Cliente Titular { get; set; }
         public int Numero { get; set; }
-        public double Saldo { get; protected set; }
-        /*Protected só pode ser acessado pela própria classe e por aqueele q herda ela*/
+        public Conta() { }
+        public Conta(int numero)
+        {
+            this.Numero = numero;
+        }
+        public double Saldo { get; private set; }
+        /*
+         Protected só pode ser acessado pela própria classe e pelas classes filhas(as que herdam ela.)
+         public double Saldo {get; protected set;}
+         */
         public int Tipo { get; set; }
 
 
@@ -127,5 +138,26 @@ namespace Banco
                 this.Saldo = Saldo;
             }
         }
+    }
+    public class TotalizadorDeContas
+    {
+        // Utilizado polimorfismo
+        public double ValorTotal { get; private set; }
+        public void Soma(Conta conta)
+        {
+            ValorTotal += conta.Saldo;
+        }
+
+        /*
+         * O que eu acabei entendendo de Polimorfismo?
+         
+            para não usar muito repetição de código eu aprendi que somente as classes herdeiras
+            podem utilizar varias funcionalidades e trazendo o conceitos de polimorfismo
+            mesmo declarando somente a classe(pai) porque os herdeiros virão junto com a genetica do
+            código. Isso ajuda a escrever códigos de qualidade
+            pequenos e muito utilitario para o software e para outros programadores da equipe facilitando
+            a agilidade do software e agilidade da equipe em resolver determidados problemas dentro de um
+            determinado tempo.
+        */
     }
 }

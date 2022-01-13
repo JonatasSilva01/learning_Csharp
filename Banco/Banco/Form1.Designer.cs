@@ -40,8 +40,11 @@ namespace Banco
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Conta = new System.Windows.Forms.GroupBox();
-            this.Teste01 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Conta.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextoTitular
@@ -148,35 +151,57 @@ namespace Banco
             this.Conta.Controls.Add(this.label1);
             this.Conta.Controls.Add(this.botaoSaque);
             this.Conta.Controls.Add(this.botaoDeposito);
-            this.Conta.Location = new System.Drawing.Point(12, 72);
+            this.Conta.Location = new System.Drawing.Point(12, 128);
             this.Conta.Name = "Conta";
             this.Conta.Size = new System.Drawing.Size(311, 310);
             this.Conta.TabIndex = 11;
             this.Conta.TabStop = false;
             this.Conta.Text = "Conta";
             // 
-            // Teste01
+            // groupBox1
             // 
-            this.Teste01.Location = new System.Drawing.Point(99, 388);
-            this.Teste01.Name = "Teste01";
-            this.Teste01.Size = new System.Drawing.Size(140, 39);
-            this.Teste01.TabIndex = 12;
-            this.Teste01.Text = "Teste";
-            this.Teste01.UseVisualStyleBackColor = true;
-            this.Teste01.Click += new System.EventHandler(this.Teste01_Click);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(311, 100);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Pesquisa";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(0, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "encontre a conta :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(154, 43);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(151, 30);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 450);
-            this.Controls.Add(this.Teste01);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Conta);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Conta.ResumeLayout(false);
             this.Conta.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -194,7 +219,9 @@ namespace Banco
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox Conta;
-        private System.Windows.Forms.Button Teste01;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
