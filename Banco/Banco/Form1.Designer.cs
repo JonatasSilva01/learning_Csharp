@@ -41,8 +41,8 @@ namespace Banco
             this.label4 = new System.Windows.Forms.Label();
             this.Conta = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboContas = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Conta.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -160,8 +160,8 @@ namespace Banco
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboContas);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(311, 100);
@@ -169,24 +169,24 @@ namespace Banco
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisa";
             // 
+            // comboContas
+            // 
+            this.comboContas.FormattingEnabled = true;
+            this.comboContas.Location = new System.Drawing.Point(105, 49);
+            this.comboContas.Name = "comboContas";
+            this.comboContas.Size = new System.Drawing.Size(166, 23);
+            this.comboContas.TabIndex = 13;
+            this.comboContas.SelectedIndexChanged += new System.EventHandler(this.comboContas_SelectedIndexChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(0, 52);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 17);
+            this.label5.Size = new System.Drawing.Size(99, 17);
             this.label5.TabIndex = 1;
-            this.label5.Text = "encontre a conta :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(154, 43);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 30);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.label5.Text = "Escolha a conta";
             // 
             // Form1
             // 
@@ -221,7 +221,7 @@ namespace Banco
         private System.Windows.Forms.GroupBox Conta;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboContas;
     }
 }
 

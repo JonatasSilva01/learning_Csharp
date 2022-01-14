@@ -12,7 +12,7 @@ namespace Banco
 {
     public partial class Form1 : Form
     {
-        private Conta conta;
+        private Conta[] conta;
         public Form1()
         {
             InitializeComponent();
@@ -20,8 +20,19 @@ namespace Banco
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.conta = new Conta();
-            this.conta = new ContaPoupanca(0);
+            conta = new Conta[3];
+
+            this.conta[0] = new Conta();
+            this.conta[0].Titular = new Cliente("Victor");
+            this.conta[0].Numero = 1;
+
+            this.conta[1] = new Conta();
+            this.conta[1].Titular = new Cliente("Mauricio");
+            this.conta[1].Numero = 2;
+
+            this.conta[2] = new Conta();
+            this.conta[2].Titular = new Cliente("osni");
+            this.conta[2].Numero = 3;
 
             Conta contaBanco = new Conta();
             Cliente cliente = new Cliente();
@@ -33,17 +44,27 @@ namespace Banco
             TextoNumero.Text = Convert.ToString(contaBanco.Numero); // Convert.ToString faz uma conversão de numero para caractere
             TextoSaldo.Text = Convert.ToString(contaBanco.Saldo);
 
+            foreach(Conta conta in conta)
+            {
+                comboContas.Items.Add($"Titular: {conta.Titular.Nome}");
+            }
+
         }
 
         private void botaoSaque_Click(object sender, EventArgs e)
         {
-            string valorDigitado = TextoValor.Text;
-            double valor = Convert.ToDouble(valorDigitado);
+            //Recuperando o indice no saque
+            int indice = Convert.ToInt32(comboContas.SelectedIndex);
+
+            // e agora precisamos ler a posição correta do array.
+            Conta selecionada = this.conta[indice];
+
+            double valor = Convert.ToDouble(TextoValor.Text);
             if(valor >= 0)
             {
-                if(this.conta.VerificaSeOClienteEstaComSaldoPositivoNoMomento())
+                if(selecionada.VerificaSeOClienteEstaComSaldoPositivoNoMomento())
                 {
-                    this.conta.Saca(valor);
+                    selecionada.Saca(valor);
                 }
                 else
                 {
@@ -52,56 +73,60 @@ namespace Banco
             }
             else
             {
-                this.conta.Saca(0);
+                selecionada.Saca(0);
                 MessageBox.Show("Digite um valor acima de 0");
             }
-            TextoSaldo.Text = Convert.ToString(this.conta.Saldo);
+            TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
         }
 
         private void botaoDeposito_Click(object sender, EventArgs e)
         {
-            string valorDigitado = TextoValor.Text;
-            double valor = Convert.ToDouble(valorDigitado);
+            // Recuperando o indice da conta selecionada
+            int indice = Convert.ToInt32(comboContas.SelectedIndex);
+
+            Conta selecionada = this.conta[indice];
+            double valor = Convert.ToDouble(TextoValor.Text);
+            /*
+            selecionada.Deposita(valor);
+
+            TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
+            */
             if(valor >= 0)
             {
-                this.conta.Deposita(valor);
+                selecionada.Deposita(valor);
                 MessageBox.Show("Valor Depositado com Sucesso!");
             }
             else
             {
-                this.conta.Deposita(0);
+                selecionada.Deposita(valor);
                 MessageBox.Show("só pode depositar acima de 0!");
             }
-            TextoSaldo.Text = Convert.ToString(this.conta.Saldo);
+            TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
             
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        }
+        private void textoIndice_TextChanged(object sender, EventArgs e)
         {
 
         }
         /*
-        private void Teste01_Click(object sender, EventArgs e)
+        private void botaoBuscar_Click(object sender, EventArgs e)
         {
-
-          //  ContaPoupanca c = new ContaPoupanca();
-          //  c.Deposita(100);
-          //  c.Saca(50);
-          //  MessageBox.Show($"{c.Saldo}");
-
-
-           Conta c1 = new Conta();
-           ContaPoupanca c2 = new ContaPoupanca(0);
-
-           TotalizadorDeContas t = new TotalizadorDeContas();
-
-           t.Soma(c1);
-           t.Soma(c2);
-
-           MessageBox.Show($"SALDO: {c1}\n Saldo: {c2}");
-
-
+            int indice = Convert.ToInt32(textoIndice.Text);
+            Conta selecionada = this.conta[indice];
+            TextoNumero.Text = Convert.ToString(selecionada.Numero);
+            TextoTitular.Text = selecionada.Titular.Nome;
+            TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
         }
         */
+
+        private void comboContas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int indice = comboContas.SelectedIndex;
+            Conta selecionada = conta[indice];
+            TextoTitular.Text = selecionada.Titular.Nome;
+            TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
+            TextoNumero.Text = Convert.ToString(selecionada.Numero);
+        }
     }
 }
